@@ -7,7 +7,7 @@ export default function Contact() {
     <section id="contact" className="py-28 md:py-36 bg-[#0A0806]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left */}
+          {/* Left — contact info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -42,7 +42,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Right — booking form (visual only) */}
+          {/* Right — Formspree booking form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -52,56 +52,78 @@ export default function Contact() {
           >
             <h3 className="font-serif text-2xl font-bold text-[#F5F0E8] mb-8">Book Your Treatment</h3>
 
-            <div className="space-y-5">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">First Name</label>
-                  <div className="border border-white/10 bg-white/3 px-4 py-3 text-[#F5F0E8]/20 text-sm">Sarah</div>
-                </div>
-                <div>
-                  <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">Last Name</label>
-                  <div className="border border-white/10 bg-white/3 px-4 py-3 text-[#F5F0E8]/20 text-sm">Mitchell</div>
-                </div>
+            <form
+              action="https://formspree.io/f/placeholder"
+              method="POST"
+              target="_blank"
+              className="space-y-5"
+            >
+              <div>
+                <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                  className="w-full border border-white/10 bg-white/5 px-4 py-3 text-[#F5F0E8]/80 text-sm placeholder-[#F5F0E8]/20 focus:outline-none focus:border-[#C9A96E]/40 transition-colors"
+                />
               </div>
 
               <div>
-                <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">Email</label>
-                <div className="border border-white/10 bg-white/3 px-4 py-3 text-[#F5F0E8]/20 text-sm">sarah@example.com</div>
+                <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">
+                  Phone / WhatsApp
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+971 50 000 0000"
+                  className="w-full border border-white/10 bg-white/5 px-4 py-3 text-[#F5F0E8]/80 text-sm placeholder-[#F5F0E8]/20 focus:outline-none focus:border-[#C9A96E]/40 transition-colors"
+                />
               </div>
 
               <div>
-                <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">Treatment</label>
-                <div className="border border-white/10 bg-white/3 px-4 py-3 text-[#F5F0E8]/20 text-sm flex items-center justify-between">
-                  <span>Signature Facial — 90 min</span>
-                  <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" className="text-[#C9A96E]/30">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">Date</label>
-                  <div className="border border-white/10 bg-white/3 px-4 py-3 text-[#F5F0E8]/20 text-sm">24 March 2026</div>
-                </div>
-                <div>
-                  <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">Time</label>
-                  <div className="border border-white/10 bg-white/3 px-4 py-3 text-[#F5F0E8]/20 text-sm">2:00 PM</div>
-                </div>
+                <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">
+                  Service
+                </label>
+                <select
+                  name="service"
+                  required
+                  className="w-full border border-white/10 bg-[#0D0A07] px-4 py-3 text-[#F5F0E8]/80 text-sm focus:outline-none focus:border-[#C9A96E]/40 transition-colors appearance-none"
+                >
+                  <option value="" disabled selected>Select a treatment</option>
+                  <option value="Signature Facial">Signature Facial — from AED 580</option>
+                  <option value="Holistic Massage">Holistic Massage — from AED 420</option>
+                  <option value="Gold Body Ritual">Gold Body Ritual — from AED 950</option>
+                  <option value="Nail Atelier">Nail Atelier — from AED 180</option>
+                  <option value="Hammam Journey">Hammam Journey — from AED 680</option>
+                  <option value="Couple's Retreat">Couple&apos;s Retreat — from AED 1,400</option>
+                </select>
               </div>
 
               <div>
-                <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">Notes (optional)</label>
-                <div className="border border-white/10 bg-white/3 px-4 py-3 text-[#F5F0E8]/15 text-sm h-20">Sensitive skin, prefer light pressure...</div>
+                <label className="text-[10px] tracking-widest uppercase text-[#F5F0E8]/40 block mb-2">
+                  Message (optional)
+                </label>
+                <textarea
+                  name="message"
+                  rows={4}
+                  placeholder="Any special requests or notes..."
+                  className="w-full border border-white/10 bg-white/5 px-4 py-3 text-[#F5F0E8]/80 text-sm placeholder-[#F5F0E8]/20 focus:outline-none focus:border-[#C9A96E]/40 transition-colors resize-none"
+                />
               </div>
 
-              <button className="btn-gold w-full justify-center mt-2">
-                Confirm Reservation
+              <button
+                type="submit"
+                className="btn-gold w-full justify-center mt-2"
+              >
+                Send Reservation Request
                 <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
                 </svg>
               </button>
-            </div>
+            </form>
           </motion.div>
         </div>
       </div>
