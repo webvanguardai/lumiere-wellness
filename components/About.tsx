@@ -24,7 +24,7 @@ export default function About() {
           >
             <div className="relative aspect-[3/4] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1610991149975-9c9d5d1b5f4c?w=800&q=80"
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80"
                 alt="Lumière interior"
                 className="w-full h-full object-cover filter grayscale-[20%]"
               />

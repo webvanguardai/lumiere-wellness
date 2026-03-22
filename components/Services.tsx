@@ -51,7 +51,7 @@ const services = [
       'Lash lifts, tints, extensions, and precision brow design. Expert technicians reshape and define, creating effortless beauty that lasts weeks.',
     duration: 'From 45 min',
     price: 'From AED 280',
-    image: 'https://images.unsplash.com/photo-1583001308071-63d66c99c38d?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80',
   },
   {
     id: '06',

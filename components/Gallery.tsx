@@ -8,7 +8,7 @@ const images = [
   { src: 'https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?w=600&q=80', span: 'col-span-1 row-span-1', label: 'Gold Facial' },
   { src: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80', span: 'col-span-1 row-span-2', label: 'Relaxation Lounge' },
   { src: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&q=80', span: 'col-span-1 row-span-1', label: 'Nail Atelier' },
-  { src: 'https://images.unsplash.com/photo-1561128290-5d7484e2a9e3?w=600&q=80', span: 'col-span-1 row-span-1', label: 'Welcome Ritual' },
+  { src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80', span: 'col-span-1 row-span-1', label: 'Welcome Ritual' },
 ]
 
 export default function Gallery() {
