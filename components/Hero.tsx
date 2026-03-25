@@ -36,10 +36,10 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif font-black text-5xl md:text-7xl lg:text-8xl leading-[1.0] tracking-tight text-[#F5F0E8] max-w-4xl"
         >
-          Where beauty{' '}
-          <span className="italic text-[#C9A96E]">meets</span>
+          Silence is{' '}
+          <span className="italic text-[#C9A96E]">the first</span>
           <br />
-          <span className="italic">serenity</span>
+          treatment.
         </motion.h1>
 
         <motion.p
@@ -48,8 +48,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-[#F5F0E8]/60 text-base md:text-lg leading-relaxed font-light"
         >
-          An elevated sanctuary of beauty and wellness in the heart of Dubai Marina.
-          Curated rituals, world-class therapists, and a space designed for transformation.
+          Forty curated rituals. Eighteen resident therapists. One private space
+          in Dubai Marina where your hour belongs entirely to you.
         </motion.p>
 
         <motion.div
@@ -59,13 +59,13 @@ export default function Hero() {
           className="mt-10 flex flex-col sm:flex-row gap-4"
         >
           <a href="#contact" className="btn-gold">
-            Reserve Your Experience
+            Book a Ritual
             <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
             </svg>
           </a>
           <a href="#services" className="btn-outline">
-            Explore Treatments
+            Discover the Treatments
           </a>
         </motion.div>
 
@@ -77,10 +77,10 @@ export default function Hero() {
           className="mt-16 flex flex-wrap gap-10"
         >
           {[
-            { val: '2,400+', label: 'Clients Served' },
-            { val: '18', label: 'Expert Therapists' },
-            { val: '40+', label: 'Signature Rituals' },
-            { val: '★ 4.9', label: 'Google Reviews' },
+            { val: '2,400+', label: 'Guests Welcomed' },
+            { val: '18', label: 'Resident Therapists' },
+            { val: '40+', label: 'Curated Rituals' },
+            { val: '4.9 ★', label: 'on Google' },
           ].map((s) => (
             <div key={s.label}>
               <div className="font-serif text-2xl font-bold text-[#C9A96E]">{s.val}</div>

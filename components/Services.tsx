@@ -79,16 +79,16 @@ export default function Services() {
         >
           <div className="flex items-center gap-3 mb-6">
             <div className="section-divider" />
-            <span className="text-[10px] tracking-[0.35em] uppercase text-[#C9A96E]/80">Our Treatments</span>
+            <span className="text-[10px] tracking-[0.35em] uppercase text-[#C9A96E]/80">The Rituals</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
             <h2 className="font-serif text-4xl md:text-5xl font-black text-[#F5F0E8] leading-tight">
-              Treatments crafted<br />
-              <span className="italic text-[#C9A96E]">for you, by masters</span>
+              Forty rituals.<br />
+              <span className="italic text-[#C9A96E]">One intention.</span>
             </h2>
             <p className="text-[#F5F0E8]/50 text-sm leading-relaxed max-w-sm">
-              Each treatment is a conversation between our therapists and your wellbeing.
-              No standard protocols — only bespoke care.
+              Every session begins with a consultation. We read your skin, your stress, your silence —
+              then select the ritual that answers it.
             </p>
           </div>
         </motion.div>
